@@ -13,7 +13,7 @@ int main()
     printf("&one[0] =%p\n", &one[0]);       //one[0]의 주소를 출력
     printf("\n");
 
-    printf(&one[0], 5);
+    print1(&one[0], 5);
 
     return 0;
 }
