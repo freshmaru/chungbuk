@@ -35,9 +35,8 @@ int main() {
     printf("st3.studentId=%d\n", st3.studentId);
     printf("st3.grade=%c\n", st3.grade);
 
-    //equality test
-    /*
-    if(strcmp(st3, st2))
+    /*equality test        이대로 진행시 오류가 나며 일일이 비교를 해주어야 함
+    if(strcmp(st3 == st2)
         printf("equal\n");
     else
         printf("not equal\n");
