@@ -260,12 +260,12 @@ int invertList(headNode* h) {
 	listNode* temp = NULL;
 	while(current != NULL)
 	{
-		temp = current;
-		current = current->link;
-		temp->link = reversed;
-		reversed = temp;
+		temp = current;			//temp는 current를 따라간다
+		current = current->link;	//currrent 자신의 뒷 노드로 이동한다
+		temp->link = reversed;		//temp는 reversed를 가리킨다
+		reversed = temp;		//reversed는 temp를 따라간다
 	}
-	h->first = reversed;
+	h->first = reversed;	//시행이 완료되었을 때 null값을 가진 를 reversed가 가르키므로 첫번째 값을 넣어서 완성해준다 
 
 	return 0;
 }
